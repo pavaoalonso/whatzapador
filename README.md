@@ -1,5 +1,3 @@
 # whatzapador
 
-Opa ... 
-
-https://api.whatsapp.com/send?phone=5561981811712
+JS minificador: https://javascript-minifier.com/
