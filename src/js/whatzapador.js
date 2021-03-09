@@ -1,4 +1,5 @@
 var inputNumeroCelular = this.numeroCelular;
+var inputTextoMensagem = this.textoMensagem;
 
 function isMobile() {
     var check = false; //wrapper no check
@@ -17,17 +18,28 @@ $("#btnAbrirChat").click((event) => {
 
     event.preventDefault();
 
-    let numeroCelular = this.inputNumeroCelular.value;
+    let numeroCelular = inputNumeroCelular.value;
+    let textoMensagem = inputTextoMensagem.value;
 
     let link = 'https://';
     link += isMobile() ? 'api' : 'web';
     link += '.whatsapp.com/send?phone=55';
     link += numeroCelular;
+    link += '&text=';
+    link += textoMensagem;
 
     window.open(link);
+
 });
 
 inputNumeroCelular.addEventListener("keyup", function(event) {
+
+    event.preventDefault();
+    
+    if (event.keyCode === 13) $("#btnAbrirChat").click();
+});
+
+inputTextoMensagem.addEventListener("keyup", function(event) {
 
     event.preventDefault();
     
