@@ -4,6 +4,13 @@ function isMobile() {
     return check;
 }
 
+function aplicarCssMobile(){
+    
+    if(isMobile()){
+        $("#formularioDiv").addClass( "divMobile" );
+    }
+}
+
 $("#btnAbrirChat").click((event) => {
 
     event.preventDefault();

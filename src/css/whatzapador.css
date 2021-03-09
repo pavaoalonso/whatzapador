@@ -1,0 +1,14 @@
+.divMobile{
+    background-color: blue;
+    size: 100pt;
+}
+
+.divMobile input{
+    height: 5%;
+    width: 40% !important;
+}
+
+.divMobile #btnAbrirChat{
+    height: 5%;
+    width: 10% !important;
+}
