@@ -6,9 +6,9 @@ function isMobile() {
 
 function aplicarCssMobile(){
     
-    if(isMobile()){
-        $("#formularioDiv").addClass( "divMobile" );
-    }
+    if(!isMobile()) return;
+
+    $("#formularioDiv").addClass( "divMobile" );
 }
 
 $("#btnAbrirChat").click((event) => {
