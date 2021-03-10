@@ -19,7 +19,15 @@ $("#btnAbrirChat").click((event) => {
     event.preventDefault();
 
     let numeroCelular = inputNumeroCelular.value;
+
+    if(!numeroCelular) {
+        $(".msgErro").css("display", "block");
+        return
+    }
+
     let textoMensagem = inputTextoMensagem.value;
+
+    $(".msgErro").css("display", "none");
 
     let link = 'https://';
     link += isMobile() ? 'api' : 'web';
