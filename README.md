@@ -1,3 +1,3 @@
 # whatzapador
 
-JS minificador: https://javascript-minifier.com/
+JS minificador: https://javascript-minifier.com/    
